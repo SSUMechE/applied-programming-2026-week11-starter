@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ap-week11"
+version = "0.1.0"
+description = "Week 11 seven-joint RRT and supplied source-model kinematics"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ap_week11*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+ap_week11 = ["panda_kinematics.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

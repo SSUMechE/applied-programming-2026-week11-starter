@@ -1,0 +1,19 @@
+The supplied numerical rigid-body transforms, joint bounds and fitted capsule
+coordinates are derived from the installed Genesis 1.3.2 model:
+xml/franka_emika_panda/panda.xml
+
+Original XML SHA-256:
+e502e07fcef6219024be02dfb9cd65d5c194b4767adf381ca51f10172ff8a32d
+
+The model's README identifies the source as the Franka Emika Panda description
+derived from franka_ros/franka_description, with the model released under
+Apache-2.0. Original source links:
+https://github.com/frankaemika/franka_ros/tree/develop/franka_description
+https://www.apache.org/licenses/LICENSE-2.0
+
+No robot mesh file is redistributed in this small teaching package. The numeric
+capsule records retain source-mesh SHA-256 values for provenance. The existing
+Genesis installation supplies the original model for optional native replay.
+Fitted capsules enclose the source collision vertices at a given configuration.
+Sampled path checks do not establish self-collision freedom, continuous collision
+freedom, successful physical transport or real-robot safety.
